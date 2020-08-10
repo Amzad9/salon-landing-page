@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- slider css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick.css" rel="stylesheet" />
+ <link rel="stylesheet" href="https://www.jqueryscript.net/demo/Clean-jQuery-Date-Time-Picker-Plugin-datetimepicker/jquery.datetimepicker.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <ul class="nav position-fixed bottom-menu fixed-bottom w-100 justify-content-around bg-white py-2 shadow">
+   
+    <li class="nav-item">
+      <a class="nav-link active d-flex text-center flex-column aria-current="page"" href="#"><i class="fa fa-search"></i>Search</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link active d-flex text-center flex-column aria-current="page"" href="#"><i class="fa fa-envelope"></i>Message</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link d-flex text-center flex-column" href="#"><i class="fa fa-heart"></i> Favourite</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link d-flex text-center flex-column" href="#"><i class="fa fa-calendar"></i>Booking</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link d-flex text-center flex-column"  href="#"><i class="fa fa-user-circle"></i>Account</a>
+    </li>
+   
+  </ul>
+  <nav class="navbar navbar-expand-lg navbar-light  shadow">
+    <div class="container">
+      <div class="dropdown drop user-dropdown order-3 btn-outline-primary border ">
+        <a class="btn  dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-user"></i>
+        </a>
+
+        <ul class="dropdown-menu py-0 dropdown-menu-right border-0 rounded-0 shadow">
+          <li class="dropdown border-bottom">
+            <a class="dropdown-item py-2" href="#">  <i class="fa fa-user"></i> Salon</a>
+            <ul class="dropdown-menu py-0 border-0 rounded-0 shadow">
+              <li><a class="dropdown-item border-bottom py-2" href="#">Salon/Beautician Registration</a></li>
+              <li><a class="dropdown-item border-bottom py-2" href="#">Salon/Beautician Admin Login</a></li>
+              <li><a class="dropdown-item py-2" href="#">Advertising request</a></li>
+            </ul>
+          </li>
+          <li class="dropdown ">
+            <a class="dropdown-item py-2" href="#">  <i class="fa fa-user"></i> User</a>
+            <ul class="dropdown-menu py-0 border-0 rounded-0 shadow">
+              <li><a class="dropdown-item border-bottom py-2" href="#">User Registration</a></li>
+              <li><a class="dropdown-item py-2" href="#">User Login</a></li>
+            </ul>
+          </li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+
+      <a class="navbar-brand order-2" href="#"><img class="logo" src="images/logo.jpg" alt="logo"></a>
+
+      <button class="btn open-nav btn-outline-black" type="submit"><img src="images/humburger.png" alt=""></button>
+      <div class="fixed-menu">
+        <div class="close d-flex justify-content-center align-items-center shadow">
+          <img src="images/close.png" class="img-fluid" alt="" style="max-width: 30px">
+        </div>
+        <ul class="nav flex-column justify-content-center pt-5">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between active" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link d-flex justify-content-between" href="#">
+              Category <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-down">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu shadow border-0 rounded-0">
+              <li><a class="dropdown-item" href="#">Beauty Saloons</a></li>
+              <li><a class="dropdown-item" href="#">Beauticians</a></li>
+              <li><a class="dropdown-item" href="#">MakeUp Artist</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link d-flex justify-content-between" href="#">
+              Services <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-down">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu shadow border-0 rounded-0">
+              <li><a class="dropdown-item" href="#">Facial</a></li>
+              <li><a class="dropdown-item" href="#">Eye Care</a></li>
+              <li><a class="dropdown-item" href="#">Slim & Fitness</a></li>
+              <li><a class="dropdown-item" href="#">Eyebrow /lashes</a></li>
+              <li><a class="dropdown-item" href="#">Nailing</a></li>
+              <li><a class="dropdown-item" href="#">Hand care</a></li>
+              <li><a class="dropdown-item" href="#">Massage/SPA</a></li>
+              <li><a class="dropdown-item" href="#">Hair Removal</a></li>
+              <li><a class="dropdown-item" href="#">Massage / SPA</a></li>
+              <li><a class="dropdown-item" href="#">Male cosmetology</a></li>
+              <li><a class="dropdown-item" href="#">Optical cosmetology</a></li>
+              <li><a class="dropdown-item" href="#">medical cosmetology</a></li>
+              <li><a class="dropdown-item" href="#">Home make-up/ treatment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link d-flex justify-content-between" href="#">
+              Salon Professionals <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-down">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu shadow border-0 rounded-0">
+              <li><a class="dropdown-item" href="#">Add Your Business</a></li>
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Book Your Advertise</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <main>
+    <section>
+      <div class="container-fluid px-0">
+        <div class="slider shadow-sm mb-0">
+          <div class="slide-slide--1">
+            <div class="container pt-0 pt-md-5">
+              <div class="row mt-0 mt-md-5 pt-3">
+                <div class="col-12 col-md-8">
+                  <h2 class="animated text-white" data-animation-in="fadeInUp" data-delay-in="0.4">Welcome</h2>
+                  <h3 class="sub-heading animated text-white mt-0 mt-md-2" data-animation-in="fadeInUp"
+                    data-delay-in="0.6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores alias impedit,
+                    fugiat tempora assumenda natu</h3>
+
+                  <p class="animated  text-white mt-0 mt-md-3" data-animation-in="fadeInUp" data-delay-in="0.6">Lorem
+                    ipsum dolor, sit amet consectetur adipisicing elit. Maiores alias impedit, fugiat tempora assumenda
+                    natus deserunt corrupti explicabo aperiam corporis magni quasi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-slide--2">
+            <div class="container pt-0 pt-md-5">
+              <div class="row mt-0 mt-md-5 pt-3">
+                <div class="col-12 col-md-8">
+                  <h2 class="animated  text-white" data-animation-in="fadeInUp" data-delay-in="0.4">Welcome</h2>
+                  <h3 class="sub-heading animated text-white" data-animation-in="fadeInUp" data-delay-in="0.6">Lorem
+                    ipsum dolor, sit amet consectetur adipisicing elit. Maiores alias impedit, fugiat tempora assumenda
+                    natu</h3>
+                  <p class="animated  text-white" data-animation-in="fadeInUp" data-delay-in="0.8">Lorem ipsum dolor,
+                    sit amet consectetur adipisicing elit. Maiores alias impedit, fugiat tempora assumenda natus
+                    deserunt corrupti explicabo aperiam corporis magni quasi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-slide--3">
+            <div class="container pt-0 pt-md-5">
+              <div class="row mt-0 mt-md-5 pt-3">
+                <div class="col-12 col-md-8">
+                  <h2 class="animated text-white" data-animation-in="fadeInUp" data-delay-in="0.4">Welcome</h2>
+                  <h3 class="sub-heading animated text-white" data-animation-in="fadeInUp" data-delay-in="0.6">Lorem
+                    ipsum dolor, sit amet consectetur adipisicing elit. Maiores alias impedit, fugiat tempora assumenda
+                    natu</h3>
+
+                  <p class="animated text-white" data-animation-in="fadeInUp" data-delay-in="0.7">Lorem ipsum dolor, sit
+                    amet consectetur adipisicing elit. Maiores alias impedit, fugiat tempora assumenda natus deserunt
+                    corrupti explicabo aperiam corporis magni quasi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div><img src="images/banne2.jpg"  alt="banner"></div>
+                    <div><img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="banner"></div> -->
+        </div>
+      </div>
+    </section>
+    <section class="py-5 box-offer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center">
+            <a href="#" class="text-decoration-none">
+               <div class=" py-5 rounded shadow">
+                 Special Offer
+               </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3  text-center">
+            <a href="#" class="text-decoration-none">
+              <div class=" py-5  rounded shadow">
+                Limited-Time offer
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3  text-center">
+           <a href="#" class="text-decoration-none">
+            <div class=" py-5 rounded shadow">
+              First Trial
+            </div>
+           </a>
+           
+            
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3  text-center">
+            <a href="#" class="text-decoration-none">
+              <div class=" py-5 rounded shadow">
+                Most Popular
+              </div>
+              
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 form-container">
+      <div class="container">
+        <div class="row mx-0 justify-content-center mb-5">
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3  mb-2 mb-md-0">
+            <div class="position-relative date-calender">
+              <input class="form-control form-control-sm"  value="2014/03/15 05:06" id="datetimepicker" type="text" placeholder=".form-control-sm">
+              <i class="fa fa-calendar  position-absolute"></i>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3  mb-2 mb-md-0">
+            <select class="form-select form-control form-select-lg mb-3" placeholder="Free">
+              <option>Free</option>
+              <option value="1">Salon</option>
+              <option value="2">Beautician </option>
+            </select>
+          </div>
+         
+        </div>
+        <div class="row mx-0">
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 px-0 mb-2 mb-md-0">
+            <input class="form-control rounded-0" list="datalistOptions" placeholder="Select Location">
+            <datalist id="datalistOptions" class="datalist">
+              <option value="Nearby">
+              <option value="HK Island">
+              <option value="Kowloon">
+              <option value="New Territories">
+            </datalist>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 px-0 mb-2 mb-md-0">
+            <input class="form-control  rounded-0" list="datalistOptions1" placeholder="Select Sub Locations">
+            <datalist id="datalistOptions1">
+              <option value="All Hong Kong Island">
+              <option value="Hong Kong Island">
+              <option value="Sheung Wan">
+              <option value="Central">
+              <option value="Wan Chai">
+              <option value="Causeway Bay">
+              <option value="Mid-levels">
+              <option value="Happy Valley">
+              <option value="Quarry Bay">
+              <option value="Aberdeen">
+              <option value="Tin Hau">
+              <option value="Central">
+              <option value="Sai Wan">
+              <option value="Chai Wan">
+              <option value="Sai Wan Ho">
+              <option value="Shau Kei Wan">
+              <option value="Central">
+              <option value="North Point">
+              <option value="Tai Koo">
+              <option value="Admiralty">
+              <option value="Fortress Hill">
+              <option value="Central">
+              <option value="Wan Chai">
+              <option value="Wan Chai">
+              <option value="Wan Chai">
+
+            </datalist>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 px-0 mb-2 mb-md-0">
+            <input class="form-control rounded-0" list="datalistOptions4" placeholder="Select Services">
+            <datalist id="datalistOptions4">
+              <option value="Facial">
+              <option value="Eye Care">
+              <option value="Slim & Fitness">
+              <option value="Slim & Fitness">
+              <option value="Eyebrow /lashes">
+                <option value="Nailing">
+                  <option value="Hand care">
+                    <option value="Hair Removal">
+                    <option value="Massage / SPA">
+                    <option value="Male cosmetology">
+                    <option value="Optical cosmetology">
+                      <option value="medical cosmetology">
+                        <option value="Home make-up/ treatment">
+
+            </datalist>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 px-0 mb-2 mb-md-0">
+            <div class="input-group">
+              <input class="form-control rounded-0" list="datalistOptions3" placeholder="Select Discount">
+              <datalist id="datalistOptions3">
+                <option value="FREE">
+                <option value="First Trial">
+                <option value="Limited-time">
+                <option value="Special Discount">
+                <option value="Rebate">
+                  <option value="Below $100">
+                    <option value="Below $200">
+                      <option value="Below $300">
+                      <option value="Below $400">
+                      <option value="Below $500">
+                      <option value="Below $600">
+                        <option value="Below $800">
+                          <option value="Below $1,000">
+  
+              </datalist>             
+              <button class="btn btn-outline-secondary px-4 search-btn" type="button"><i
+                  class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-services py-5 ">
+      <div class="container overflow-hidden">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="main-heading">Our Services</h2>
+          </div>
+        </div>
+        <div class="row mt-3">
+
+          <div class="col-6 com-sm-6 col-md-2 text-center">
+            <div class="img-wrapper m-auto p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/Moisturising.png" alt="brush">
+            </div>
+            <p>Facial</p>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2 text-center">
+            <div class="img-wrapper m-auto p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/eyecare.png" alt="brush">
+            </div>
+            <p>Eye Care</p>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2 text-center">
+            <div class="img-wrapper m-auto p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/Group.png" alt="brush">
+            </div>
+            <p>Slim & Fitness</p>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2 text-center">
+            <div class="img-wrapper m-auto p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/EyelashGel.png" alt="brush">
+            </div>
+            <p>Eyebrow /lashes</p>
+          </div>
+          <div class="col-6 com-sm-6 col-md-2 text-center">
+            <div class="img-wrapper m-auto  p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/NailPolish.png" alt="brush">
+            </div>
+            <p>Nailing</p>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2  text-center">
+            <div class="img-wrapper m-auto  p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/outline.png" alt="brush">
+            </div>
+            <p>Hand care</p>
+          </div>
+        </div>
+        <div class="row mt-2 mt-md-4">
+          <div class="col-6 col-sm-6 col-md-2 text-center">
+            <div class="img-wrapper m-auto  p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/hair-r.png" alt="brush">
+            </div>
+            <p>Hair Removal</p>
+          </div>
+          <div class="col-6 col -sm-6 col-md-2  text-center">
+            <div class="img-wrapper  m-auto  p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/massager.png" alt="brush">
+            </div>
+            <p>Massage / SPA</p>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2  text-center">
+            <div class="img-wrapper m-auto  p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/male.png" alt="brush">
+            </div>
+            <p>Male cosmetology</p>
+          </div>
+          <div class="col-6 col-sm-6  col-md-2 text-center">
+            <div class="img-wrapper m-auto p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/optical.png" alt="brush">
+            </div>
+            <p>Optical cosmetology</p>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2  text-center">
+            <div class="img-wrapper m-auto p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/Shape.png" alt="brush">
+            </div>
+            <p>medical cosmetology</p>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2 text-center">
+            <div class="img-wrapper m-auto p-4 rounded-circle d-flex justify-content-center align-items-center">
+              <img src="images/Makeup.png" alt="brush">
+            </div>
+            <p>Home make-up/ treatment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-light services">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card m-0 shadow border-0 p-3 position-relative mb-3 mb-md-0">
+              <div class="position-absolute share-icon">
+                <a href="#"><i class="fa fa-bookmark p-2 rounded-circle"></i></a>
+                <a href="#"><i class="fa fa-heart p-2 rounded-circle"></i></a>
+                <!-- <a href="#"><i class="fa fa-bookmark"></i></a> -->
+              </div>
+              <img
+                src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                class="card-img-top" alt="img">
+              <div class="card-body px-0">
+                <a href="#" class="btn btn-outline-primary py-1">Beauty Salon</a>
+                <h5 class="card-title mt-3">Rose Beauty</h5>
+                <p class="card-text">Some quick example text to build on the card title.</p>
+
+              </div>
+              <div class="card-footer bg-white px-0">
+                <span class="bg-info text-white p-1 rounded-lg mr-1">4.5/4</span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <span class="pl-2">(6 review)</span>
+                <span class="ml-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Los Angeless</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card m-0 shadow border-0 p-3 position-relative mb-3 mb-md-0">
+              <div class="position-absolute share-icon">
+                <a href="#"><i class="fa fa-bookmark p-2 rounded-circle"></i></a>
+                <a href="#"><i class="fa fa-heart p-2 rounded-circle"></i></a>
+                <!-- <a href="#"><i class="fa fa-bookmark"></i></a> -->
+              </div>
+              <img
+                src="https://images.pexels.com/photos/361754/pexels-photo-361754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                class="card-img-top" alt="data-img">
+              <div class="card-body px-0">
+                <a href="#" class="btn btn-outline-primary py-1">Beauty Salon</a>
+                <h5 class="card-title mt-3">Rose Beauty</h5>
+                <p class="card-text">Some quick example text to build on the card title.</p>
+
+              </div>
+              <div class="card-footer bg-white px-0">
+                <span class="bg-info text-white p-1 rounded-lg mr-1">4.5/4</span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <span class="pl-2">(6 review)</span>
+                <span class="ml-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Los Angeless</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card m-0 shadow border-0 p-3 position-relative mb-3 mb-md-0">
+              <div class="position-absolute share-icon">
+                <a href="#"><i class="fa fa-bookmark p-2 rounded-circle"></i></a>
+                <a href="#"><i class="fa fa-heart p-2 rounded-circle"></i></a>
+                <!-- <a href="#"><i class="fa fa-bookmark"></i></a> -->
+              </div>
+              <img
+                src="https://images.pexels.com/photos/3992866/pexels-photo-3992866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                class="card-img-top" alt="img">
+              <div class="card-body px-0">
+                <a href="#" class="btn btn-outline-primary py-1">Beauty Salon</a>
+                <h5 class="card-title mt-3">Rose Beauty</h5>
+                <p class="card-text">Some quick example text to build on the card title.</p>
+
+              </div>
+              <div class="card-footer bg-white px-0">
+                <span class="bg-info text-white p-1 rounded-lg mr-1">4.5/4</span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <span class="pl-2">(6 review)</span>
+                <span class="ml-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Los Angeless</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-ite"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 clinet-say-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="text-white main-heading">What Our Clients Say</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div
+            class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 col-xxl-8 text-center bg-white py-5 rounded-lg px-3 px-md-5">
+            <div class="client-for">
+              <div>
+                <h4 class="sub-heading">ESTHER STEVES</h4>
+                <h3 class="small-heading font-italic">Vice Director - Wilson Media</h3>
+                <p class="font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ducimus doloremque
+                  quibusdam ipsum dolor? Harum explicabo, aspernatur animi enim obcaecati laboriosam similique possimus
+                  saepe laudantium, esse nemo nihil dolores illum?</p>
+              </div>
+              <div>
+                <h4 class="sub-heading">WILSON STEVES</h4>
+                <h3 class="small-heading font-italic">Vice Director - Wilson Media</h3>
+                <p class="font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ducimus doloremque
+                  quibusdam ipsum dolor? Harum explicabo, aspernatur animi enim obcaecati laboriosam similique possimus
+                  saepe laudantium, esse nemo nihil dolores illum?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10 text-center">
+            <h2 class="main-heading">News</h2>
+            <p>Gather the latest and most beautiful Beauty Salon in Hong Kong, beauty salons, beautician facial
+              treatments, eye treatments, skin/pore repair, massage/SPA, men’s beauty, optical beauty, medical beauty,
+              home beauty and other information, news, information , News and offers, always updated to keep you
+              informed of the trend of the beauty industry and market in Hong Kong</p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-2 mt-md-4">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card m-0 shadow border-0 p-3 mb-3 mb-md-0">
+              <img
+                src="https://images.pexels.com/photos/3985361/pexels-photo-3985361.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                class="card-img-top" alt="bn-img">
+              <div class="card-body px-0">
+                <a href="#" class="btn btn-outline-primary py-1">Beauty & Spa</a>
+                <h5 class="card-title pt-3">Rose Beauty</h5>
+                <p class="card-text">Some quick example text to build on the card title.</p>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card m-0 shadow border-0 p-3 mb-3 mb-md-0">
+              <img
+                src="https://images.pexels.com/photos/939836/pexels-photo-939836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                class="card-img-top" alt="img-bn">
+              <div class="card-body px-0">
+                <a href="#" class="btn btn-outline-primary py-1">Beauty & Spa</a>
+                <h5 class="card-title pt-3">Rose Beauty</h5>
+                <p class="card-text">Some quick example text to build on the card title.</p>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card m-0 shadow border-0 p-3 mb-3 mb-md-0">
+              <img
+                src="https://images.pexels.com/photos/4197701/pexels-photo-4197701.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                class="card-img-top" alt="bd-img">
+              <div class="card-body px-0">
+                <a href="#" class="btn btn-outline-primary py-1">Beauty & Spa</a>
+                <h5 class="card-title pt-3">Rose Beauty</h5>
+                <p class="card-text">Some quick example text to build on the card title.</p>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mb-5 pb-3">
+    <div class="container-fluid px-0">
+      <div class="row address mx-0">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 py-0s py-md-5 pl-2 pl-md-4">
+          <div class="px-3 px-md-3 px-lg-5 ml-0 ml-md-0 ml-lg-5 py-5 py-md-5">
+            <h5 class=" font-weight-bold text-white">Worlds's No. 1 Local Beauty Business Directory.</h5>
+            <ul class="list-unstyled mt-4">
+              <li class="samll-heading">Dummy Address Dummy Address Dummy Address Dummy Address</li>
+              <li class="samll-heading mt-3">contact@example.com</li>
+              <li class="samll-heading mt-3">+61-1234-5678-09</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 py-0 py-md-5 bg-black pr-4">
+          <div class="pl-2 pl-md-0 pl-lg-5 ml-2 ml-md-2 ml-lg-5 py-5">
+            <div class="row">
+              <div class="col-12">
+                <h5 class="font-italic font-weight-bold text-white">Quick Links</h5>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <ul class="list-unstyled pl-4">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Beauticians</a></li>
+                  <li><a href="#">Advertise us</a></li>
+                  <li><a href="#">Register</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <ul class="list-unstyled pl-4 pl-md-0">
+                  <li><a href="#">Beauty Saloons</a></li>
+                  <li><a href="#">MakeUp Artist</a></li>
+                  <li><a href="#">Add Business</a></li>
+                  <li><a href="#">Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5 copyright border-top border-dark">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-center text-md-left text-lg-left">
+            <p class="mb-2 mb-md-0 text-white">Copyright © 2020 Top UP Beauty. All Rights Reserved</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="social text-center text-md-right">
+              <a href=""><i class="fa fa-facebook-f"></i></a>
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-google"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+              <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  <script src="https://www.jqueryscript.net/demo/Clean-jQuery-Date-Time-Picker-Plugin-datetimepicker/jquery.datetimepicker.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/slick-animation.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
